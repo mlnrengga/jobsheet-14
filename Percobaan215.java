@@ -1,11 +1,12 @@
 import java.util.Scanner;
 public class Percobaan215 {
-    static int hitungPangkat(int x, int y){
-        if (y == 0){
-            return (1);
-        }else{
-            return (x * hitungPangkat(x, y - 1));
+    static int hitungPangkat(int x, int y) {
+        if (y == 0) {
+            System.out.print("1 = ");
+            return 1;
         }
+        System.out.print(x + "x");
+        return x * hitungPangkat(x, y - 1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
