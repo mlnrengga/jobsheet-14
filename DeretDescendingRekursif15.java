@@ -17,8 +17,11 @@ public class DeretDescendingRekursif15 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan nilai N: ");
         int n = sc.nextInt();
+        System.out.println("Deret rekursif: ");
         rekursif(n);
+        System.out.println("Deret iteratif: ");
         iteratif(n);
         sc.close();
 
